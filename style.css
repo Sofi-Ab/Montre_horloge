@@ -1,0 +1,85 @@
+* {
+margin: 0 ;
+padding: 0;
+}
+
+body{
+    background: hsl(210, 2%, 53%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: rgb(161, 141, 141);
+}
+.clock{
+    background-image: url(./image/montre.png);
+    background-color: hsl(210, 2%, 53%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover; 
+   border-radius: 50%;
+   
+    
+}
+
+.wrap{
+ 
+    position: relative;
+    width: 200px;
+    height: 200px;
+   
+    border-radius: 50%;
+    
+}
+
+.minute, .heure{
+    position: absolute;
+    height: 60px; width: 2px;
+    background: rgb(14, 15, 14);
+    margin: auto;
+    top: -35%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform-origin: bottom center ;
+    transform-origin: rotate(0deg);
+    box-shadow: 0 0 10px  rgb(0, 0, 0, .4);
+
+}
+
+.minute{
+    background-color: rgb(248, 228, 11);
+    position: absolute;
+    height: 70px;
+    width: 2px;
+    top: -38%;
+    left: 0;
+    right: 5px;
+    transform: rotate(90deg);
+}
+
+.seconde{
+    position:absolute ;
+    height: 50px;
+    width: 1px;
+    margin: auto;
+    left: 0 ;
+    right: 0;
+    bottom: 0;
+    top: -26% ;
+    background-color: crimson;
+    transform-origin: bottom center ;
+    transform: rotate(180deg);
+
+}
+.dot{
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    margin: auto;
+    left: 0 ;
+    right: 60px;
+    bottom: 20px;
+    top: 0 ;    
+}
